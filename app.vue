@@ -1,3 +1,8 @@
+<script setup>
+const storeSeason = useSeasonsStore()
+await useAsyncData('seasons', () => storeSeason.getSeasons().then(res => res.seasons))
+</script>
+
 <template>
   <Html lang="en">
 
