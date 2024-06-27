@@ -1,7 +1,6 @@
 <script setup>
 definePageMeta({
   middleware: ["guest-only"],
-  layout: false,
 });
 
 const
@@ -51,9 +50,6 @@ const
           <button type="submit" :disabled="form.pending">Sign in</button>
         </div>
       </form>
-      <div>
-        <NuxtLink to="/">Go back home</NuxtLink>
-      </div>
     </main>
     <BaseFooter />
   </div>

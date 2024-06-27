@@ -10,9 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.4",
     "nuxt": "^3.12.2"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vuetify": "^3.6.10"
   }
 }

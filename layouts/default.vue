@@ -1,9 +1,12 @@
+<script setup>
+const route = useRoute()
+</script>
+
 <template>
-  <div>
-    <BaseHeader />
-    <main>
+  <v-app full-height :class="route.name === 'index' ? 'bg-white' : 'bg-grey-lighten-5'">
+    <AppBarDefault />
+    <v-main>
       <slot />
-    </main>
-    <BaseFooter />
-  </div>
+    </v-main>
+  </v-app>
 </template>
