@@ -14,7 +14,7 @@ const
 </script>
 
 <template>
-  <v-app-bar flat :border="route.name !== 'index'" class="pa-2">
+  <v-app-bar flat :border="route.name !== 'index'" class="px-2">
     <template #prepend>
       <v-avatar>
         <v-img src="/img/logos/faw-logo.png" />

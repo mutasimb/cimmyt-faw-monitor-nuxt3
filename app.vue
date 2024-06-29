@@ -1,4 +1,8 @@
 <script setup>
+useHead({
+  titleTemplate: str => (str ? `${str} - ` : '') + 'Fall Armyworm Monitor'
+})
+
 const storeSeason = useSeasonsStore()
 await useAsyncData('seasons', () => storeSeason.getSeasons().then(res => res.seasons))
 </script>
@@ -6,12 +10,8 @@ await useAsyncData('seasons', () => storeSeason.getSeasons().then(res => res.sea
 <template>
   <Html lang="en">
 
-  <Head>
-    <Title>Nuxt 3 Auth</Title>
-    <Meta name="description" content="Trying to implement a simple authentication system in Nuxt3" />
-  </Head>
-
   <Body>
+    <NuxtLoadingIndicator />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

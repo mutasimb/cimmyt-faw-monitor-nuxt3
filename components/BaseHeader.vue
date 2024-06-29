@@ -28,7 +28,7 @@ const
         <NuxtLink to="/">Auth example</NuxtLink>
         <div>
           <template v-if="currentUser">
-            <NuxtLink to="/private">Private</NuxtLink>
+            <NuxtLink to="/user">User</NuxtLink>
             <NuxtLink v-if="isAdmin" to="/admin">Admin</NuxtLink>
             <button :disabled="form.pending" @click="onLogoutClick">Logout</button>
           </template>

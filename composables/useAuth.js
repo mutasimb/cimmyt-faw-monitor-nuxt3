@@ -6,6 +6,8 @@ export default () => {
     setUser = user => { authUser.value = user },
     setCookie = cookie => { cookie.value = cookie },
 
+    check = async phone => $fetch("/auth/check", { method: "POST", body: { phone } }),
+
     login = async (phone, password) => {
       const data = await $fetch("/auth/login", { method: "POST", body: { phone, password } })
 
@@ -33,5 +35,5 @@ export default () => {
       return authUser
     }
 
-  return { login, logout, me }
+  return { check, login, logout, me }
 }
