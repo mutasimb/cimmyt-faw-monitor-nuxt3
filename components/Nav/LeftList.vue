@@ -17,7 +17,7 @@ leftDrawer.value = !mobile.value
   <v-navigation-drawer v-model="leftDrawer" :permanent="!mobile">
     <v-list>
 
-      <v-list-item to="/user">
+      <v-list-item to="/home">
         <template v-slot:prepend>
           <v-icon icon="mdi-home-outline" />
         </template>

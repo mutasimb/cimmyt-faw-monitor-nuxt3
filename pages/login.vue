@@ -42,7 +42,7 @@ const
       pendingLogin.value = true
       await login(phone.value, password.value)
 
-      await navigateTo('/user')
+      await navigateTo('/home')
 
     } catch (error) {
       console.log(error)

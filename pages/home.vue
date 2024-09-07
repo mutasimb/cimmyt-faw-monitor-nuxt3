@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'User'
+  title: 'Home'
 })
 
 definePageMeta({
