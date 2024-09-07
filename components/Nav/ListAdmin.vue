@@ -2,7 +2,7 @@
 const
   itemsAdmin = ref([
     { to: '/admin-user-access', icon: 'mdi-account-key-outline', title: 'User Access' },
-    // { to: '/admin-manage-seasons', icon: 'mdi-list-box-outline', title: 'Seasons Management' },
+    { to: '/admin-manage-seasons', icon: 'mdi-list-box-outline', title: 'Seasons Management' },
     // { to: '/admin-manage-collectors', icon: 'mdi-account-group-outline', title: 'Data Collectors Management' },
   ])
 </script>
