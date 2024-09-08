@@ -15,6 +15,8 @@ await useAsyncData('seasons', () => storeSeason.getSeasons().then(res => res.sea
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+
+    <Snackbar />
   </Body>
 
   </Html>
