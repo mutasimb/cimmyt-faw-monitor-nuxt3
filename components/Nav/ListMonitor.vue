@@ -1,7 +1,7 @@
 <script setup>
 const
   itemsAdmin = ref([
-    // { to: '/monitor-scouting-data', icon: 'mdi-account-details-outline', title: 'Scouting Data' },
+    { to: '/monitor-scouting-data', icon: 'mdi-account-details-outline', title: 'Scouting Data' },
   ])
 </script>
 
